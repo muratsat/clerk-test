@@ -14,6 +14,9 @@ export function CreatePost() {
       router.refresh();
       setName("");
     },
+    onError: (error) => {
+      alert(error);
+    },
   });
 
   return (
